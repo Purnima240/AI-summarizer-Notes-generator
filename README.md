@@ -6,27 +6,29 @@ An open-source Flask application that transcribes lecture audio into text using 
 
 ## 🚀 Features
 
-- 🎧 **Audio Upload**: Upload `.mp3`, `.wav`, or `.m4a` files
-- 🔊 **Speech-to-Text**: Transcribes audio using Whisper
-- 🧠 **Smart Note Generation**: Generates detailed notes using OpenRouter LLM
-- 📋 **Summary**: Extracts concise summaries of the lectures
-- 💡 Ideal for students, teachers, and researchers
+- 🎧 **Audio Upload**: Upload `.mp3`, `.wav`, or `.m4a` files  
+- 🔊 **Speech-to-Text**: Transcribes audio using Whisper  
+- 🧠 **Smart Note Generation**: Generates detailed notes using OpenRouter LLM  
+- 📋 **Summary**: Extracts concise summaries of the lectures  
+- 💡 Ideal for students, teachers, and researchers  
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer      | Tool/Library              |
-|------------|---------------------------|
-| Transcription | `whisper` (OpenAI ASR)       |
-| Summarization | `OpenRouter API` + LLM         |
-| Backend    | `Flask`                   |
-| Frontend   | `React` (optional for chatbot UI) |
-| File Handling | `Werkzeug`, `pydub`          |
+| Layer          | Tool/Library              |
+|----------------|---------------------------|
+| Transcription  | `whisper` (OpenAI ASR)    |
+| Summarization  | `OpenRouter API` + LLM    |
+| Backend        | `Flask`                   |
+| Frontend       | `React` (optional)        |
+| File Handling  | `Werkzeug`, `pydub`       |
 
 ---
 
 ## 📁 Folder Structure
+
+```plaintext
 whisper/
 ├── app.py                  # Main Flask app to run the server and routes
 ├── whisper_utils.py        # Handles audio transcription using Whisper
@@ -38,7 +40,3 @@ whisper/
 ├── static/                 # Static files like CSS or JS (if needed)
 ├── templates/              # HTML templates (e.g., index.html)
 └── uploads/                # Directory where uploaded audio files are saved
-
-
-
-
